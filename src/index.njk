@@ -1,0 +1,41 @@
+---
+title: ullasincense
+layout: 'base.njk'
+---
+
+<section class="all-sec">
+    
+    <div class="product-row">
+        {%- for row1 in collections.row1 -%}
+        <a href="{{ row1.url }}" class="navi-link">
+            <div class="first-product">
+                <img src="{{row1.data.image}}" class="prod-img">
+                <p class="prod-txt">{{row1.data.title}}</p>
+            </div>
+        </a> 
+         {%- endfor -%}
+    </div>
+   
+    
+    <div class="product-row-2">
+        {%- for row2 in collections.row2 -%}
+        <a href="{{ row2.url }}" class="navi-link">
+            <div class="first-product">
+                <img src="{{row2.data.image}}" class="prod-img">
+                <p class="prod-txt">{{row2.data.title}}</p>
+            </div>
+        </a> 
+        {%- endfor -%}
+    </div>
+    
+    <div class="product-row">
+        {%- for row3 in collections.row3 -%}
+        <a href="{{ row3.url }}" class="navi-link">
+            <div class="first-product">
+                <img src="{{row3.data.image}}" class="prod-img">
+                <p class="prod-txt">{{row3.data.title}}</p>
+            </div>
+        </a> 
+        {%- endfor -%}
+    </div>
+</section>
